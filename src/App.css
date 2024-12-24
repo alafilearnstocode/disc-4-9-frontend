@@ -1,0 +1,63 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  background-color: #f9f9f9;
+  color: #333;
+  height: 100vh;
+}
+
+.followers-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; 
+}
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+
+.back-button {
+  position: absolute;
+  left: 1rem;
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.header h1 {
+  font-size: 1.25rem;
+}
+
+
+.tabs ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.tabs ul li a {
+  text-decoration: none;
+  padding: .75rem .5rem; 
+}
+
+.tabs ul li a.active {
+   border-bottom :2px solid black; 
+}
+
+
+.user-list {
+    flex-grow: 1; 
+overflow-y: auto;
+}
