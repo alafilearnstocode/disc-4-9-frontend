@@ -1,0 +1,122 @@
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.back-button {
+  position: absolute; 
+  left: 1rem; 
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: 'pointer';
+}
+
+.header h1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+
+
+.tabs ul {
+  display: flex;
+  justify-content: center; 
+  list-style-type: none;
+  margin-top: 0.5rem;
+}
+
+.tabs ul li {
+  margin: 0 1rem; 
+}
+
+.tabs ul li a {
+  text-decoration: none;
+  padding: 0.75rem 0.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.tabs ul li a.active {
+  border-bottom: 2px solid black; 
+}
+
+
+.user-card {
+  display: flex;
+  align-items: center; /* Vertically center all items */
+  justify-content: space-between; /* Space between profile info and button */
+  background-color: white;
+  padding: 16px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 1px 3px;
+}
+
+.profile-pic {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; /* Make profile picture circular */
+  flex-shrink: 0; /* Prevent shrinking of the image */
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column; /* Stack name, username, and bio vertically */
+  margin-left: 10px; /* Add spacing between image and text */
+  flex-grow: 1; /* Allow text to take available space */
+}
+
+.user-info h2 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 4px; /* Add spacing below name */
+}
+
+.user-info p {
+  font-size: 0.9rem;
+  color: #666; /* Subtle color for secondary text */
+}
+
+.follow-button {
+  background-color: #333; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem; 
+  font-size: 0.9rem; 
+  cursor: pointer;
+}
+
+.follow-button.following {
+  background-color: #555; 
+}
+
+
+
+.follow-button {
+  background-color: #333; 
+  color: white; 
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem; 
+  font-size: 0.9rem; 
+  cursor: pointer;
+}
+
+.follow-button.following {
+  background-color: #555; 
+}
+
+.loading {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+}
+
