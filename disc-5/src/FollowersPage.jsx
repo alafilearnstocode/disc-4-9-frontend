@@ -7,7 +7,7 @@ const FollowersPage = () => {
   useEffect(() => {
     const fetchFollowers = async () => {
       try {
-        const response = await fetch("https://disc-assignment-5-users-api.onrender.com/api/users");
+        const response = await fetch("http://localhost:3003/Users");
         const data = await response.json();
         setFollowers(data);
       } catch (error) {
